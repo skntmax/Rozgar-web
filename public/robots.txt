@@ -1,0 +1,32 @@
+# Created September, 19, 2022.
+# Author: Amit Kumar
+# Email : info[at]rozgar.com
+# Edited : Sep 19, 2022
+# Edited : Sep 19, 2022 (sitemaps added)
+# Edited : Oct 11, 2022 (sitemaps added)
+# Edited : Oct 29, 2022 (sitemaps added)
+# Edited : Nov 01, 2022 (sitemaps added)
+# Edited : Nov 02, 2022 (sitemaps added)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.rozgar.com/sitemap.xml
+Sitemap: https://www.rozgar.com/sitemap/city.xml
+Sitemap: https://www.rozgar.com/sitemap/designation.xml
+Sitemap: https://www.rozgar.com/sitemap/locality.xml
+Sitemap: https://www.rozgar.com/sitemap/skills.xml
+Sitemap: https://www.rozgar.com/sitemap/home.xml
+Sitemap: https://www.rozgar.com/sitemap/category.xml
+Sitemap: https://www.rozgar.com/sitemap/blog.xml
+Sitemap: https://www.rozgar.com/sitemap/company.xml
+Sitemap: https://www.rozgar.com/sitemap/faq.xml
+Sitemap: https://www.rozgar.com/sitemap/interviewByCompany.xml
+Sitemap: https://www.rozgar.com/sitemap/interviewByDesignations.xml
+Sitemap: https://www.rozgar.com/sitemap/interviewBySkills.xml
+Sitemap: https://www.rozgar.com/sitemap/jobs.xml
+Sitemap: https://www.rozgar.com/sitemap/jobSearchIndia.xml
+Sitemap: https://www.rozgar.com/sitemap/fullStackJobsIndiaOne.xml
+Sitemap: https://www.rozgar.com/sitemap/fullStackJobsIndiaTwo.xml
+Sitemap: https://www.rozgar.com/sitemap/fullStackJobsIndiaThree.xml
+
