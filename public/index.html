@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/favicon.png">
+    
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/fontawesome-all.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/linearicons.css">
+    <link rel="stylesheet" href="./assets/css/prettyPhoto.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/chartist.css">
+    <link rel="stylesheet" href="./assets/css/scrollbar.css">
+    <link rel="stylesheet" href="./assets/css/chosen.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/css/transitions.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62a2dab9cda69344"></script> -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    
+    <style>
+        .skeleton {
+            background: #fff;
+            /* border: 1px solid; */
+            /* border-color: #e5e6e9 #dfe0e4 #d0d1d5; */
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+        
+        .skeleton-wrapper-inner {
+            height: 170px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .skeleton-wrapper-body div {
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: placeholderSkeleton;
+            background: #f6f7f8;
+            background-image: -webkit-gradient(linear, left center, right center, from(#f6f7f8), color-stop(.2, #edeef1), color-stop(.4, #f6f7f8), to(#f6f7f8));
+            background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+            background-repeat: no-repeat;
+            background-size: 800px 104px;
+            height: 104px;
+            position: relative;
+        }
+        
+        .skeleton-wrapper-body {
+            -webkit-animation-name: skeletonAnimate;
+            background-image: -webkit-gradient(linear, center top, center bottom, from(deg), color-stop(0, red), color-stop(.15, orange), color-stop(.3, yellow), color-stop(.45, green), color-stop(.6, blue), color-stop(.75, indigo), color-stop(.8, violet), to(red));
+            background-image: -webkit-linear-gradient(135deg, red 0%, orange 15%, yellow 30%, green 45%, blue 60%, indigo 75%, violet 80%, red 100%);
+            background-repeat: repeat;
+            background-size: 50% auto;
+        }
+        
+        .skeleton-wrapper-body div {
+            position: absolute;
+            right: 15px;
+            left: 15px;
+            top: 15px;
+        }
+        
+        div.skeleton-avatar {
+            height: 60px;
+            width: 60px;
+            border-radius: 60px;
+            right: auto;
+        }
+        
+        div.skeleton-author {
+            top: 20px;
+            height: 20px;
+            left: 95px;
+            width: 150px;
+        }
+        
+        div.skeleton-label {
+            left: 95px;
+            top: 50px;
+            height: 10px;
+            width: 100px;
+        }
+        
+        div.skeleton-content-1,
+        div.skeleton-content-2,
+        div.skeleton-content-3 {
+            left: 15px;
+            right: 15px;
+            height: 10px;
+        }
+        
+        div.skeleton-content-1 {
+            top: 100px;
+        }
+        
+        div.skeleton-content-2 {
+            top: 120px;
+        }
+        
+        div.skeleton-content-3 {
+            top: 140px;
+        }
+        
+        @-webkit-keyframes placeholderSkeleton {
+            0% {
+                background-position: -468px 0;
+            }
+            100% {
+                background-position: 468px 0;
+            }
+        }
+        
+        @-webkit-keyframes skeletonAnimate {
+            from {
+                background-position: top left;
+            }
+            to {
+                background-position: top right;
+            }
+        }
+    </style>
+
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>www.rozgar.com</title>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MLKKSXX');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.rozgar.com",
+            "potentialAction": [{
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://www.rozgar.com/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            }]
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe title="" src="https://www.googletagmanager.com/ns.html?id=GTM-MLKKSXX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div className="preloader-outer">
+        <div className='loader'></div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <style>
+        .page-section {
+            position: relative
+        }
+        
+        .navigation {
+            position: relative
+        }
+        
+        .navigation__link {
+            display: block;
+            float: left;
+            color: #000;
+            width: 100%;
+            text-decoration: none;
+            padding: .4em 1.4em;
+            margin-bottom: 1px;
+            font-weight: 400;
+            background-color: rgba(0, 0, 0, 0.1)
+        }
+        
+        .navigation__link:hover {
+            background-color: #ffeeef;
+            color: black
+        }
+        
+        .navigation__link.active {
+            color: black;
+            background-color: #ffeeef
+        }
+        
+        .clearHeader {
+            width: 100%;
+            position: sticky;
+            top: 100px
+        }
+    </style>
+
+
+    <script src="./assets/js/vendor/jquery-3.3.1.js"></script>
+    <script src="./assets/js/vendor/jquery-library.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.basictable.min.js"></script>
+    <script src="./assets/js/jquery.sortable.js"></script>
+    <script src="./assets/js/jquery.collapse.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/circle-progress.js"></script>
+    <script src="./assets/js/scrollbar.min.js"></script>
+    <script src="./assets/js/chosen.jquery.js"></script>
+    <script src="./assets/js/prettyPhoto.js"></script>
+    <script src="./assets/js/chartist.js"></script>
+    <script src="./assets/js/appear.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#mainNav a[href*=#]').bind('click', function(e) {
+                e.preventDefault(); // prevent hard jump, the default behavior
+
+                var target = $(this).attr("href"); // Set the target as variable
+
+                // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                $('html, body').stop().animate({
+                        scrollTop: $(target).offset().top
+                    },
+                    900,
+                    function() {
+                        location.hash = target; //attach the hash (#jumptarget) to the pageurl
+                    });
+
+                return false;
+            });
+        });
+
+        $(window).scroll(function() {
+            var scrollDistance = $(window).scrollTop();
+
+            // Show/hide menu on scroll
+            //if (scrollDistance >= 850) {
+            //		$('nav').fadeIn("fast");
+            //} else {
+            //		$('nav').fadeOut("fast");
+            //}
+
+            // Assign active class to nav links while scolling
+            $('.page-section').each(function(i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('.navigation a.active').removeClass('active');
+                    $('.navigation a').eq(i).addClass('active');
+                }
+            });
+            var scroll = $(window).scrollTop();
+            if (scroll <= 100) {
+                $(".navigation").removeClass("clearHeader");
+            } else {
+                $(".navigation").addClass("clearHeader");
+            }
+        }).scroll();
+        //# sourceURL=pen.js
+    </script>
+
+</body>
+
+</html>
